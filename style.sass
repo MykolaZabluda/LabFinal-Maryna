@@ -1,0 +1,80 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans&display=swap)
+
+@font-face
+    font-family: 'gothamBold'
+    src: url(fonts/Gotham-Bold.otf)
+
+$gothamBold: 'gothamBold';
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    scroll-behavior: smooth
+
+html,
+body 
+    max-width: 100%
+    overflow-x: hidden
+
+.slider
+    width: 100%
+    height: 100vh
+    position: absolute
+    margin-bottom: 0px !important
+    .slide_item
+        height: 100vh
+        width: 100%
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+        position: relative
+    .slide_one
+        background-image: url(images/Lab3.jpg)
+    .slide_two
+        background-image: url(images/Lab3.jpg)
+    .slide_three
+        background-image: url(images/Lab3.jpg)
+    .slide_four
+        background-image: url(images/Lab6.png)
+    .slide_five
+        background-image: url(images/Lab7.png)
+    .slide_six
+        background-image: url(images/Lab8.png)
+    .slide_seven
+        background-image: url(images/LabKR.jpg)
+    .slide_eight
+        background-image: url(images/Lab3.jpg)
+
+.slider_holder .slick-dots
+    //border: 1px solid #000
+    width: 22px
+    height: 400px
+    display: flex
+    flex-flow: column
+    z-index: 1
+    justify-content: space-around
+    top: 50%
+    left: 100%
+    transform: translate(-140%, -50%)
+    .slick-active
+        background-color: #fff
+    
+
+.header_middle
+    height: 135px
+    width: 900px
+    //border: 1px solid red
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    .header_title
+        text-transform: uppercase
+        text-align: center
+        font-size: 80px
+        letter-spacing: 0.050em
+        margin-bottom: 40px
+        color: #fff
+        font-family: $gothamBold
+        font-weight: bold
